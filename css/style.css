@@ -100,13 +100,21 @@ aside {
 .article1 {
     width: 30%;
     height: 50vh;
+    margin: 10px;
 }
+.article1 img{
+    width: 100%;
+}
+.article1:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 0px 1px gray;
 
+}
 .article1 p {
     width: 100%;
     font-size: 15px;
     text-align: left;
-    padding: 0 8%;
+    /* padding: 0 8%; */
 }
 
 .day {
@@ -116,6 +124,7 @@ aside {
 .p-right p {
     text-align: right;
     /* margin-top: 10% */
+
 }
 
 .read {
