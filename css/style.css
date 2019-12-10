@@ -14,6 +14,7 @@ body {
     /* max-width: 1152px; */
     height: 100%;
 }
+
 /* widthこっちやと都合悪いΣ(-᷅_-᷄๑) */
 
 header {
@@ -47,23 +48,29 @@ li {
     position: absolute;
     /* margin-left: 10%; */
     z-index: 2;
-    bottom: 65%;
+    bottom: 67%;
 }
 
 .header-r {
     position: absolute;
     z-index: 2;
     left: 55.4%;
-    top: 48.2%;
+    top: 47%;
 }
 
 .main-f {
     width: 100%;
 }
+
 /* ヤバイ！明日琉大潜入やった(・∀・)早く寝ろ私！ */
+
 h6 {
     font-size: 25px;
     text-align: left;
+}
+
+.font {
+    display: none;
 }
 
 h1 {
@@ -71,6 +78,7 @@ h1 {
     font-size: 35px;
     /* text-align: center; */
 }
+
 aside {
     margin: 0 auto;
 }
@@ -82,27 +90,32 @@ aside {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .article1 {
     width: 30%;
     height: 50vh;
 }
+
 .article1 p {
     width: 100%;
     font-size: 15px;
     text-align: left;
     padding: 0 8%;
 }
+
 .day {
     margin: 5px 0;
 }
-.p-right p{
 
+.p-right p {
     text-align: right;
     /* margin-top: 10% */
 }
+
 .read {
     margin-top: 10%;
 }
+
 .footer {
     background-color: black;
     color: aliceblue;
@@ -115,13 +128,49 @@ aside {
 
 @media screen and (max-width: 767px) {
     body {
-        width: 100%;
+        width: 767px;
+        margin: 0 auto;
     }
-/* レスポンシブのやつできない(´；ω；`) */
-/* 明日いさむ氏に頼もう_(:3 」∠)_ */
-.article img {
+    .top {
+        width: 767px;
+        margin: 0 auto;
+    }
+    .header-l {
+        width: 100%;
+        top: 3%;
+    }
+    /* レスポンシブのやつできない(´；ω；`) */
+    /* 明日いさむ氏に頼もう_(:3 」∠)_ */
+    ul {
+        display: none;
+    }
+    main {
+        margin: 0 auto;
+    }
+    .special img {
+        width: 767px;
+        margin-top: 26%;
+    }
+    .header-r {
+        display: none;
+    }
+    .article1 p {
+        text-align: left;
+    }
+    .article1 {
+        width: 100%;
+        display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .article img {
+        width: 65%;
+    }
+    .font {
+        display: block;
+    }
+    h6 {
+        text-align: center;
     }
 }
 
