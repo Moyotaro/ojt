@@ -64,7 +64,7 @@ li {
 
 /* ヤバイ！明日琉大潜入やった(・∀・)早く寝ろ私！ */
 
-h6 {
+.main-font {
     font-size: 25px;
     text-align: left;
 }
@@ -155,22 +155,32 @@ aside {
         display: none;
     }
     .article1 p {
-        text-align: left;
+        /* text-align: left; */
+        margin-left: 30%;
+    }
+    .p-right {
+        margin-left: 35%;
     }
     .article1 {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
     .article img {
-        width: 65%;
+        width: 100%;
+        height: auto;
+        
     }
     .font {
         display: block;
     }
-    h6 {
+    .main-font {
         text-align: center;
+    }
+    h1 {
+        font-size: 50px;
     }
 }
 
