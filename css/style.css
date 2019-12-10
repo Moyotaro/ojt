@@ -144,6 +144,10 @@ aside {
     .header-l {
         width: 100%;
         top: 3%;
+        /* height: 50vh; */
+    }
+    .header-l img {
+        /* padding-bottom: 10%; */
     }
     /* レスポンシブのやつできない(´；ω；`) */
     /* 明日いさむ氏に頼もう_(:3 」∠)_ */
@@ -160,11 +164,12 @@ aside {
         display: block !important;
         position: relative;
         z-index: 1;
+
     }
     .special1 img {
         display: block;
         width: 100%;
-        margin-top: 26%;
+        margin-top: 33%;
     }
     .header-r {
         display: none;
@@ -174,10 +179,16 @@ aside {
         position: absolute;
         z-index: 2;
         margin-top: 5%;
+        margin-left: 5%;
+    }
+    .article1 {
+        width: 767px;
+        overflow: hidden;
     }
     .article1 p {
         /* text-align: left; */
         margin-left: 30%;
+        width: 100%;
     }
     .p-right {
         margin-left: 35%;
