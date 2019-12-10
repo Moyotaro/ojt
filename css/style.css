@@ -43,6 +43,9 @@ li {
     z-index: 1;
     /* left: 17.5%; */
 }
+.special1{
+    display: none;
+}
 
 .header-l {
     position: absolute;
@@ -56,6 +59,9 @@ li {
     z-index: 2;
     left: 55.4%;
     top: 47%;
+}
+.header-2{
+    display: none;
 }
 
 .main-f {
@@ -147,12 +153,27 @@ aside {
     main {
         margin: 0 auto;
     }
-    .special img {
-        width: 767px;
+    .special{
+        display: none;
+    }
+    .special1{
+        display: block !important;
+        position: relative;
+        z-index: 1;
+    }
+    .special1 img {
+        display: block;
+        width: 100%;
         margin-top: 26%;
     }
     .header-r {
         display: none;
+    }
+    .header-2{
+        display: block !important;
+        position: absolute;
+        z-index: 2;
+        margin-top: 5%;
     }
     .article1 p {
         text-align: left;
