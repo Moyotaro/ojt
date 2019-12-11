@@ -6,13 +6,14 @@
 body {
     margin: 0 auto;
     text-align: center;
-    width: 1152px;
+    width: 100%;
 }
 
 .container {
     line-height: 1.5;
     /* max-width: 1152px; */
     height: 100%;
+    width: 100%;
 }
 
 /* widthこっちやと都合悪いΣ(-᷅_-᷄๑) */
@@ -35,37 +36,58 @@ li {
     padding-left: 15px;
     font-size: 20px;
 }
-
-.special {
-    margin-top: 5.4%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    /* left: 17.5%; */
+.main{
+    width: 100%;
 }
-.special1{
-    display: none;
+.all{
+    width: 100%;
 }
 
 .header-l {
     position: absolute;
-    /* margin-left: 10%; */
+    width:30%;
     z-index: 2;
-    bottom: 67%;
+    margin-right: 10%;
+    margin-top: -5%;
+
+}
+.header-l img{
+    width: 60%;
 }
 
 .header-r {
     position: absolute;
     z-index: 2;
-    left: 55.4%;
-    top: 47%;
+    width: 40%;
+    margin-top:-17.7%;
+    margin-left:55%;
+
 }
+.header-r img {
+    width: 100%;
+}
+.special{
+    position: relative;
+    z-index: 1;
+   width: 80%;
+   margin-left:10%;
+}
+.special img{
+    width: 100%;
+}
+
+.special1{
+    display: none;
+}
+
+
 .header-2{
     display: none;
 }
 
 .main-f {
     width: 100%;
+    margin-left: 10%;
 }
 
 /* ヤバイ！明日琉大潜入やった(・∀・)早く寝ろ私！ */
@@ -143,11 +165,11 @@ aside {
 
 @media screen and (max-width: 767px) {
     body {
-        width: 767px;
+        width: 100%;
         margin: 0 auto;
     }
     .top {
-        width: 767px;
+        width: 100%;
         margin: 0 auto;
     }
     .header-l {
@@ -156,14 +178,16 @@ aside {
         /* height: 50vh; */
     }
     .header-l img {
-        /* padding-bottom: 10%; */
+        width: 35%;
     }
+
     /* レスポンシブのやつできない(´；ω；`) */
     /* 明日いさむ氏に頼もう_(:3 」∠)_ */
     ul {
         display: none;
     }
     main {
+        width: 100%;
         margin: 0 auto;
     }
     .special{
@@ -187,9 +211,13 @@ aside {
         display: block !important;
         position: absolute;
         z-index: 2;
+        width: 40%;
         margin-top: 5%;
         margin-left: 5%;
     }
+  .header-2 img {
+      width: 100%;
+  }
     .article1 {
         width: 767px;
         overflow: hidden;
@@ -226,3 +254,4 @@ aside {
 }
 
 @media screen and(min-width:768px) {}
+/*  */
