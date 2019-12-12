@@ -27,6 +27,7 @@ header {
 }
 
 ul {
+    margin: 0 65px 50px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -34,24 +35,26 @@ ul {
 
 li {
     padding-left: 15px;
-    font-size: 20px;
+    font-size: 25px;
 }
-.main{
+
+.main {
     width: 100%;
 }
-.all{
+
+.all {
     width: 100%;
 }
 
 .header-l {
     position: absolute;
-    width:30%;
+    width: 30%;
     z-index: 2;
     margin-right: 10%;
-    margin-top: -5%;
-
+    margin-top: -9%;
 }
-.header-l img{
+
+.header-l img {
     width: 60%;
 }
 
@@ -59,40 +62,41 @@ li {
     position: absolute;
     z-index: 2;
     width: 40%;
-    margin-top:-17.7%;
-    margin-left:55%;
-
+    margin-top: -17.7%;
+    margin-left: 55%;
 }
+
 .header-r img {
     width: 100%;
 }
-.special{
+
+.special {
     position: relative;
     z-index: 1;
-   width: 80%;
-   margin-left:10%;
+    width: 80%;
+    margin-left: 10%;
 }
-.special img{
+
+.special img {
     width: 100%;
 }
 
-.special1{
+.special1 {
     display: none;
 }
 
-
-.header-2{
+.header-2 {
     display: none;
 }
 
 .main-f {
-    width: 100%;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 /* ヤバイ！明日琉大潜入やった(・∀・)早く寝ろ私！ */
 
 .main-font {
+    /* overflow: hidden; */
     font-size: 25px;
     text-align: left;
 }
@@ -103,7 +107,8 @@ li {
 
 h1 {
     margin-bottom: 2%;
-    font-size: 35px;
+    margin-top: 3%;
+    font-size: 40px;
     /* text-align: center; */
 }
 
@@ -113,7 +118,7 @@ aside {
 
 .article {
     margin: 0 auto;
-    width: 86%;
+    width: 84%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -121,22 +126,25 @@ aside {
 
 .article1 {
     width: 30%;
-    height: 50vh;
+    height: 50%;
     margin: 10px;
+    /* padding: 0 10px; */
 }
-.article1 img{
-    width: 100%;
-}
-.article1:hover{
-    cursor: pointer;
-    box-shadow: 1px 1px 0px 1px gray;
 
-}
-.article1 p {
+.article1 img {
     width: 100%;
-    font-size: 15px;
+    height: 50%;
+}
+
+.article1:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px gray;
+}
+
+.article1 p {
+    font-size: 19px;
     text-align: left;
-    /* padding: 0 8%; */
+    padding: 0 10px;
 }
 
 .day {
@@ -144,13 +152,29 @@ aside {
 }
 
 .p-right p {
+    margin-left: 60%;
     text-align: right;
-    /* margin-top: 10% */
-
 }
 
 .read {
-    margin-top: 10%;
+    margin-top: 8%;
+    position: relative;
+}
+
+.read::after {
+    background-color: black;
+    bottom: -10px;
+    content: '';
+    /* display: inline-block; */
+    height: 1px;
+    width: 20px;
+    left: 80%;
+    position: absolute;
+    transition: .5s all;
+}
+.read:hover::after {
+    width: 70%;
+    left: 20%;
 }
 
 .footer {
@@ -180,7 +204,6 @@ aside {
     .header-l img {
         width: 35%;
     }
-
     /* レスポンシブのやつできない(´；ω；`) */
     /* 明日いさむ氏に頼もう_(:3 」∠)_ */
     ul {
@@ -190,14 +213,13 @@ aside {
         width: 100%;
         margin: 0 auto;
     }
-    .special{
+    .special {
         display: none;
     }
-    .special1{
+    .special1 {
         display: block !important;
         position: relative;
         z-index: 1;
-
     }
     .special1 img {
         display: block;
@@ -207,7 +229,7 @@ aside {
     .header-r {
         display: none;
     }
-    .header-2{
+    .header-2 {
         display: block !important;
         position: absolute;
         z-index: 2;
@@ -215,9 +237,9 @@ aside {
         margin-top: 5%;
         margin-left: 5%;
     }
-  .header-2 img {
-      width: 100%;
-  }
+    .header-2 img {
+        width: 100%;
+    }
     .article1 {
         width: 767px;
         overflow: hidden;
@@ -240,7 +262,6 @@ aside {
     .article img {
         width: 100%;
         height: auto;
-        
     }
     .font {
         display: block;
@@ -254,4 +275,5 @@ aside {
 }
 
 @media screen and(min-width:768px) {}
+
 /*  */
